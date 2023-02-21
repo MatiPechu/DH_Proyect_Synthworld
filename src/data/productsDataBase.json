@@ -1,0 +1,172 @@
+[
+	{
+		"id": 5,
+		"name": "55electron OKT MKII555",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"description": " asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas",
+		"img": "octatrack-mkii.webp"
+	},
+	{
+		"id": 7,
+		"name": "7electron OKT MKII",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 8,
+		"name": "8electron OKT MKII",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 9,
+		"name": "9electron OKT MKII",
+		"price": "1300",
+		"category": "Acesories",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 10,
+		"name": "10electron OKT MKII",
+		"price": "1300",
+		"category": "Acesories",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 11,
+		"name": "11electron OKT MKII",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 12,
+		"name": "12electron OKT MKII",
+		"price": "1300",
+		"category": "Effects",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 13,
+		"name": "13electron OKT MKII",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 14,
+		"name": "14electron OKT MKII",
+		"price": "1300",
+		"category": "Effects",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 15,
+		"name": "15electron OKT MKII",
+		"price": "1300",
+		"category": "Modules&Cases",
+		"img": "octatrack-mkii.webp",
+		"description": "asda sd asd asd asdasdas dasdasd asd asd asd asd asd asd asd asdasd",
+		"extraInfo": "-sdasdasd, -dsasdasdas, -asdasd, -asdas"
+	},
+	{
+		"id": 16,
+		"name": "digitakt",
+		"price": "750",
+		"category": "Modules&Cases",
+		"description": "sdfvsdf\r\n",
+		"extraInfo": "- dsfsdfs\r\n- sdfsdf\r\n- sdfsd\r\n- sdfsdf",
+		"img": "productImg-1669405004310.jpeg"
+	},
+	{
+		"id": 17,
+		"name": "digitakt",
+		"price": "750",
+		"category": "Modules&Cases",
+		"description": "sdfvsdf\r\n",
+		"extraInfo": "- dsfsdfs\r\n- sdfsdf\r\n- sdfsd\r\n- sdfsdf",
+		"img": "productImg-1669405004310.jpeg"
+	},
+	{
+		"id": 18,
+		"name": "digitakt",
+		"price": "750",
+		"category": "Modules&Cases",
+		"description": "sdfvsdf\r\n",
+		"extraInfo": "- dsfsdfs\r\n- sdfsdf\r\n- sdfsd\r\n- sdfsdf",
+		"img": "productImg-1669405004310.jpeg"
+	},
+	{
+		"id": 19,
+		"name": "digitakt",
+		"price": "750",
+		"category": "Modules&Cases",
+		"description": "sdfvsdf\r\n",
+		"extraInfo": "- dsfsdfs\r\n- sdfsdf\r\n- sdfsd\r\n- sdfsdf",
+		"img": "productImg-1669405004310.jpeg"
+	},
+	{
+		"id": 20,
+		"name": "digitakt",
+		"price": "750",
+		"category": "Modules&Cases",
+		"description": "sdfvsdf\r\n",
+		"extraInfo": "- dsfsdfs\r\n- sdfsdf\r\n- sdfsd\r\n- sdfsdf",
+		"img": "productImg-1669405004310.jpeg"
+	},
+	{
+		"id": 21,
+		"name": "gabi",
+		"price": "6000",
+		"category": "Effects",
+		"description": "le estoy mostrando la pagina",
+		"extraInfo": "asda",
+		"img": "productImg-1669500846262.png"
+	},
+	{
+		"id": 22,
+		"name": "dfggerge",
+		"price": "rnry",
+		"category": "Modules&Cases",
+		"description": "erbrb",
+		"img": "productImg-1669739445071.png"
+	},
+	{
+		"id": 23,
+		"name": "New product",
+		"price": "1100",
+		"category": "Modules&Cases",
+		"description": "Probando a ver si anda",
+		"extraInfo": "-Aca va la extra info\r\n-Como specs: 110v\r\n-Includes: 1 synth.",
+		"img": "productImg-1669739933107.jpeg"
+	},
+	{
+		"id": 24,
+		"name": "Hola de nuevo",
+		"price": "55555",
+		"category": "Modules&Cases",
+		"description": "  como estas",
+		"extraInfo": "sssss",
+		"img": "productImg-1669850568269.png"
+	}
+]

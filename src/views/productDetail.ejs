@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <link href="/css/productDetail.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+<!--Inicio productDetail-->
+<main>
+    <section>
+        <article class="product-title product-title-tb">
+            <h2><%= product.name %> </h2>
+            </article>
+        <article class="product-img">
+            <img src="/img/products/<%= product.image %>">  <!--imagen de ejemplo. Cambiarla-->
+        </article>
+        <div class="product-details">
+        <article class="product-title product-title-mb">
+        <h2><%= product.name %></h2>
+        </article>
+        <div class="price-and-quantity">
+        <article class="price">
+            <p>$<%= product.price %></p>
+        </article>
+            <div class="buttons-quantity">
+                <button class="buttons-quantity-subtraction">-</button>
+                <input type="numeric" name= "quantity" value="1" class="buttons-quantity-input">
+                <button class="buttons-quantity-adition">+</button>
+            </div>
+    </div>
+            
+            
+        <article class="buttons">
+            <button type="submit" class="btn-wishlist">
+                + wishlist
+            </button>
+            <!-- <i class="far fa-heart"></i>
+            <i class="fas fa-cart-plus"></i> -->
+            <button type="submit" class="btn-cart">
+                Add to cart
+            </button> 
+
+        </article>
+    </div>
+    <div>
+        <a href="/products/edit/<%= product.id %>">Edit Product</a>
+        <!-- <form action="/products/edit/< %= product.id %>" method="get">
+            <button type="submit" class="btn-to-edition">
+                Edit Product
+            </button>
+        </form> -->
+    </div>
+    <div>
+        <form action="/products/delete/<%= product.id %>/?_method=DELETE" method="POST">
+            <button type="submit" class="btn-delete-product" style="display: inline-flex">
+                Delete product
+            </button>
+        </form>    
+    </div>
+    </section>
+    <section class="includes-specs-tb">
+        <article class="description-tb">
+            <h3>Description</h3>
+            <p class="description tb"><%= product.description %></p>
+        </article>
+        <article class="extraInfo-tb">
+            <h3>Extra Info</h3>
+            <p class="extra-info-tb"><%= product.extraInfo %></p>
+        </article>
+    </section>
+
+
+<!--dropdown section mobile-->
+<section class="info-dropdown">
+    <article class="description">
+        <h2>Description</h2>
+        <div class="btn-dropdown">
+            <i class="fas fa-caret-down"></i>
+        </div>  
+    </article>
+    <article class="extra-info">
+        <h2>Extra info</h2>
+        <div class="btn-dropdown">
+            <i class="fas fa-caret-down"></i>
+        </div> 
+    </article>
+    <article class="sample">
+        <h2>Samples</h2>
+        <div class="btn-dropdown">
+            <i class="fas fa-caret-down"></i>
+        </div> 
+    </article>
+</section>
+<!-- fin dropdown section -->
+
+
+<!--Similar products section-->
+<article class="similar-products">
+    <div class="related-title">
+    <h3>Similar/Related products</h3>
+    </div>
+    <div class="related-items-container">
+        <div class="related-item">
+        <div class="img-related-container">
+            <img src="/img/octatrack-mkii.webp">
+        </div>    
+            <div class="product-name">
+                <p>Synthetizer UNO</p>
+            </div>
+            <div class="product-price">
+                <p class="price">$5000</p>
+            </div>
+            </div>
+            <div class="related-item">
+        <div class="img-related-container">
+            <img src="/img/octatrack-mkii.webp">
+        </div>    
+        <div class="product-name">
+                <p>BOSE headphones</p>
+        </div>
+        <div class="product-price">
+                <p class="price">$3000</p>
+        </div>
+        </div> 
+        <div class="related-item">
+            <div class="img-related-container">
+                <img src="/img/octatrack-mkii.webp">
+            </div>    
+            <div class="product-name">
+                    <p>BOSE headphones</p>
+            </div>
+            <div class="product-price">
+                    <p class="price">$3000</p>
+            </div>
+            </div> 
+            <div class="related-item">
+                <div class="img-related-container">
+                    <img src="/img/octatrack-mkii.webp">
+                </div>    
+                <div class="product-name">
+                        <p>BOSE headphones</p>
+                </div>
+                <div class="product-price">
+                        <p class="price">$3000</p>
+                </div>
+                </div> 
+                <div class="related-item">
+                    <div class="img-related-container">
+                        <img src="/img/octatrack-mkii.webp">
+                    </div>    
+                    <div class="product-name">
+                            <p>BOSE headphones</p>
+                    </div>
+                    <div class="product-price">
+                            <p class="price">$3000</p>
+                    </div>
+                    </div> 
+                    <div class="related-item">
+                        <div class="img-related-container">
+                            <img src="/img/octatrack-mkii.webp">
+                        </div>    
+                        <div class="product-name">
+                                <p>BOSE headphones</p>
+                        </div>
+                        <div class="product-price">
+                                <p class="price">$3000</p>
+                        </div>
+                        </div> 
+        
+    </div>       
+</article>
+
+
+</main>
+
+
+
+<!--Footer partials-->
+<%- include('./partials/footer') %>
+
+</body>
+</html>

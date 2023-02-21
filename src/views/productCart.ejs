@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <link href="css/productCart.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <main>
+        <section class="list-art">
+            <article class="card">
+                <section class="card-art-header">
+                <div class="img-contain">
+                <img src="/img/modular-categories.jpg" alt="modular-categories" class="imgArtc">
+                </div>
+                <div class="art-info">
+                    <h4 class="precio">$6.770</h4>
+                    <h3 class="descripcion">8electron OKT MKII</h3>   
+                </div>
+                </section>
+                <section class="card-art-end">
+                    <section class="stars-review">
+                        <div class="stars-review-title">
+                            <H5>Review Title</H5>
+                        </div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </section>
+                <section class="item-cart-button">
+                    <div class="buttons-quantity">
+                        <button class="buttons-quantity-subtraction">-</button>
+                        <input type="numeric" name= "quantity" value="1" class="buttons-quantity-input">
+                        <button class="buttons-quantity-adition">+</button>
+                    </div>
+                    <button class="item-cart-button-ToWishlist">Move to Wishlist</button>
+                    <button class="item-cart-button-remove">Remove</button>
+                </section>
+                </section>
+            </article>
+            <article class="card">
+                <section class="card-art-header">
+                <div class="img-contain">
+                <img src="/img/modular-categories.jpg" alt="modular-categories" class="imgArtc">
+                </div>
+                <div class="art-info">
+                    <h4 class="precio">$6.770</h4>
+                    <h3 class="descripcion">7electron OKT MKII</h3>   
+                </div>
+                </section>
+                <section class="card-art-end">
+                    <section class="stars-review">
+                        <div class="stars-review-title">
+                            <H5>Review Title</H5>
+                        </div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </section>
+                <section class="item-cart-button">
+                    <div class="buttons-quantity">
+                        <button class="buttons-quantity-subtraction">-</button>
+                        <input type="numeric" name= "quantity" value="1" class="buttons-quantity-input">
+                        <button class="buttons-quantity-adition">+</button>
+                    </div>
+                    <button class="item-cart-button-ToWishlist">Move to Wishlist</button>
+                    <button class="item-cart-button-remove">Remove</button>
+                </section>
+                </section>
+            </article>
+        </section>
+        <section class="summary-contain">
+            <article class="summary">
+                <h2 class="summary-contain-title">Order Summary</h2>
+                    <section class="sumatory-contain">
+                        <div class="subtotal-contain">
+                            <p class="subtotal">Subtotal</p>
+                            <p class="subtotal-amount">$13.450</p>
+                        </div>
+                        <div class="discount-contain">
+                            <p class="discount">Discount</p>
+                            <p class="discount-amount">$13.450</p>
+                        </div>
+                        </section>
+                <section class="order-summary-total-contain">
+                    <h3 class="total-title">Total</h3>
+                    <h4 class="total-amount">$13.540</h4>
+                </section>
+                <section class="order-summary-button">
+                    <button type="submit" class="button-checkout">Checkout now</button>
+                    <button class="button-shopping">Continue shopping</button>
+                </section>
+                </div>
+            </article>
+        </section>
+    </main>    
+</body>
+
+<!--Footer partials-->
+<%- include('./partials/footer') %>
+
+</body>
+</html>

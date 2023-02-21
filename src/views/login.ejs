@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <link href="/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('./partials/header') %>
+
+<!-- login form -->
+    
+<main>  
+    
+
+        <form action="/users/login" method="POST" class="login-form">
+            <!-- para mostrar la lista de errores-->
+            <% if (locals.errors) { 
+
+                for (let i = 0; i < errors.length; i++) {  %>
+                    <li class = "errorList">
+                    <%=  errors[i].msg %></li>
+                    <%  }
+                }
+                else { %>
+            <h1>Welcome back!</h1>
+            <h2>Please login</h2>
+       <% } %>
+            <div class="container-inputs">
+         <!--   <label for="userEmail">Email address:</label> -->
+            <p class="email-error errorsJs"></p>
+            <input type="email" name="userEmail" id="userEmail" placeholder="Email address"  class="email-input-login" >
+            
+
+         <!--  <label for="userPassword">Password:</label>  -->
+            <p class="password-error errorsJs"></p>
+            <input type="password" name="userPassword" id="userPassword" placeholder="Password" >
+    </div>
+    <div class="bellow-inputs-login">
+    <div><input type="checkbox" name="rememberMe"> Remember me </div>
+    <p class="forgot-password"><strong>Forgot password?</strong></p>
+</div>
+    <button type="submit" class="btn-login">
+        Login
+    </button>
+    <p>
+        Or
+    </p>
+<!--FB and Gmail buttons-->
+<div class="container-btn-register-with">
+        <button class="btn-register-with-facebook"><i class="fab fa-facebook"></i>
+Login with Facebook</button>
+    </div>
+    
+    <div class="container-btn-register-with">
+        <button class="btn-register-with-google"><i class="fab fa-google"></i><span> Login with Google </span></button>
+    </div>
+
+
+    <p class="create-account">Don't have an account?<a href="/users/register"><strong> Register</strong></a></p>    <!--Linkear al register-->
+    </form>
+
+</main>
+
+<!--Footer partials-->
+<%- include('./partials/footer') %>
+<script src="/js/loginValidation.js" type="text/javascript"></script>
+</body>
+</html>

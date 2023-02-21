@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <link href="css/shop.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('./partials/header') %>
+<main>
+    <section class="categories">
+      <!--  <h2>Categories</h2> -->
+        <div class="img-categories">
+        <article class="modules-cases">
+            <img src="img/modular-categories.jpg">
+            <p class="categories-text">Modules & Cases</p>
+            </article>
+            <article class="sequencers">
+                <img src="img/Drum-Seq.jpeg">
+                <p class="categories-text">Sequencers</p>
+                </article>    
+            <article class="accesories">
+                <img src="img/accesories.jpeg">
+                <p class="categories-text">Accesories</p>
+                </article> 
+                <article class="effects">
+                    <img src="img/effects1.jpeg">
+                    <p class="categories-text">Effects</p>
+                    </article>
+            <article class="weird-gear">
+                <img src="img/weird-gear2.jpeg">
+                <p class="categories-text">Weird Gear</p>
+                </article> 
+                <article class="new-releases">
+                    <img src="img/new-releases1.jpeg">
+                    <p class="categories-text">New Releases</p>
+                    </article>   
+                    </div>    
+    </section>
+
+    <!-- product list -->
+    <section class="popular-products">
+        <h2>Popular products</h2>
+        <div class="product-list">
+        <% products.forEach((product) => { %>
+        
+        <article class="product-article">
+            <a href = "/products/<%= product.id %>">
+            <div class="product-img-container">
+            <img class="product-image" src="img/products/<%= product.image %> ">
+        </div>
+            <div class="price-name">
+            <p class="price">$<%= product.price %> </p>
+        <h6><%= product.name %> </h6>
+        </div>
+    </a>
+        </article>
+   <% }) %>  
+        <!-- <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article> -->
+
+        <!-- <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article>
+        <article class="product-article">
+            <img class="product-image" src="img/octatrack-mkii.webp">
+            <div class="price-name">
+            <p class="price">$6770</p>
+        <h6>Elektron Octatrack mkii</h6>
+        </div>
+        </article> -->
+    </div>
+       </section>
+    
+       
+    </main>
+
+<!--Footer partials-->
+<%- include('./partials/footer') %>
+
+</body>
+</html>
