@@ -5,6 +5,7 @@ const {validationResult} = require ('express-validator');
 // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const db = require('../database/models');
 const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 // Constantes de los Modelos citados//
 const Brand = db.Brand;
@@ -22,15 +23,17 @@ const productController={
 //     res.render('productDetail',{product});
 // },
 productDetail:(req, res) => {
+    console.log(req.session)
     Product.findByPk(req.params.id)
-    .then((product) => res.render('productDetail',{product}));
+    .then((product) => res.render('productDetail',{product, session: req.session}));
     },
 
 // shop:(req, res) => {
 //     res.render('shop', {products});
 // },
 shop: (req, res) => {
-    Product.findAll().then((products) => res.render('shop', {products}));
+    console.log(req.session)
+    Product.findAll().then((products) => res.render('shop', {products, session: req.session}));
 },
 productCreation:(req, res) => {
     let categoryP = Category.findAll();  
@@ -64,7 +67,7 @@ store: (req, res) => {
         image: req.file ? req.file.filename : "defaultProductImage.png",
         is_active : req.body.isActive == 'on' ? 1 : 0,
         description : req.body.description,
-        extraInfo : req.body.extraInfo
+        extra_info : req.body.extra_info
     })
     .then((product) => {
         console.log(2)  
@@ -191,7 +194,7 @@ update: (req,res) => {
         image: req.file ? req.file.filename : data.image,
         is_active : req.body.isActive == 'on' ? 1 : 0,
         description : req.body.description,
-        extra_info : req.body.extraInfo
+        extra_info : req.body.extra_info
         
     }, {
         where: {id : idP}
@@ -274,6 +277,18 @@ delete: (req, res) => {
     })
     .catch(err => res.send(err));
 },
-
+productImage:(req,res)=>{
+    res.render(req.file)
+},
+search:(req,res)=>{
+    let search = req.query.search
+    Product.findAll(
+        {
+        where: {
+            name: {[Op.like]: `%${search}%`}
+        }
+    }
+    ).then((products) => res.render('shop', {products, session: req.session}));
+},
 };
 module.exports = productController;

@@ -30,7 +30,7 @@
                 
                 <article class="productDescriptionConteiner">
                     <label for="description">Description</label>
-                    <textarea name="description"  id="productDescription"> <%= locals.oldData ? oldData.description:product.description %> </textarea>
+                    <textarea name="description"  id="productDescription"><%= locals.oldData ? oldData.description:product.description %></textarea>
                 <% if(locals.errors && errors.description) { %>
                         <div class="errorList">
                             <%= errors.description.msg %> 
@@ -38,8 +38,8 @@
                     <% } %>
                 </article>
                 <article class="productExtraInfoConteiner">
-                    <label for="extraInfo">Extra Info</label>
-                    <textarea type="text" name="extraInfo" ><%= locals.oldData ? oldData.extraInfo:product.extraInfo %></textarea>
+                    <label for="extra_info">Extra info</label>
+                    <textarea type="text" name="extra_info" ><%= locals.oldData ? oldData.extra_info:product.extra_info %></textarea>
                 </article>
             </div>
             <div class="second-container-inputs">
@@ -82,7 +82,7 @@
                     </select>
                 </article>
             </div>
-            <article>
+            <article class="btn-Product-Status">
                 <label for="isActive">Show in the shop</label>
                 <input type="checkbox" <% if (product.is_active == 1) { %> checked <% } %>  name="isActive" placeholder="Active">
             </article>

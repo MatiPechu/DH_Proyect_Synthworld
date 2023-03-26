@@ -1,3 +1,10 @@
+main {
+    margin-bottom: 100px;
+}
+.product_Detail_Section{
+    max-width: 96%;
+    margin: auto;
+}
 .product-title-mb h2 {
     font-size: 2rem;
     padding-top: 10px;
@@ -21,12 +28,13 @@ h1 {
     
     
 }
+
 .product-details {
     padding: 0 20px 0 10px;
 }
 .buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 20px 0;
     align-items: flex-end;
     
@@ -41,6 +49,7 @@ h1 {
 }
 
 .btn-wishlist {
+    display: none;
     background-color: #282828;
     color:#FFFFFF;
     border: solid white 1px;
@@ -124,7 +133,7 @@ h1 {
     align-items: flex-end;
 }
 .buttons-quantity {
-    display: flex;
+    display: none;
     justify-content: center;
     height: 25px;
 
@@ -164,6 +173,37 @@ h1 {
 }
 .includes-specs-tb {
     display: none;
+}
+.descriptionTextMb, .extraInfoTextMb {
+    width: 90%;
+    text-align: justify;
+    margin: 10px auto 10px auto;
+}
+.linkEdit {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.btn-delete-product {
+    background-color: #282828;
+    border: 2px solid rgb(176, 60, 60);
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 @media (min-width :768px) {
     header {
@@ -235,6 +275,12 @@ h1 {
     .description-tb {
         width: 50%;
     }
+
+    .description-p-tb, p.extra-info-tb  {
+        text-align: justify;
+        width: 95%;
+        margin: auto;
+    }
     .product-title-mb {
         display: none;
         text-align: center;
@@ -255,6 +301,7 @@ h1 {
     main {
         width: 90%;
         margin:auto;
+        margin-bottom: 100px;
     }
 }
 
